@@ -312,9 +312,7 @@ void menu_configuration() {
     SUBMENU(MSG_DEBUG_MENU, menu_debug);
   #endif
 
-  #if DISABLED(SLIM_LCD_MENUS)
-    SUBMENU(MSG_ADVANCED_SETTINGS, menu_advanced_settings);
-  #endif
+  SUBMENU(MSG_ADVANCED_SETTINGS, menu_advanced_settings);
 
   #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
     SUBMENU(MSG_ZPROBE_ZOFFSET, lcd_babystep_zoffset);
