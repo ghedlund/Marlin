@@ -472,6 +472,7 @@ void menu_cancelobject();
 
 #endif // !SLIM_LCD_MENUS
 
+#if DISABLED(SLIM_LCD_MENUS)
 // M92 Steps-per-mm
 void menu_advanced_steps_per_mm() {
   START_MENU();
@@ -492,6 +493,7 @@ void menu_advanced_steps_per_mm() {
 
   END_MENU();
 }
+#endif
 
 void menu_advanced_settings() {
   #if ENABLED(FILAMENT_RUNOUT_SENSOR) && FILAMENT_RUNOUT_DISTANCE_MM
@@ -526,8 +528,10 @@ void menu_advanced_settings() {
   #endif // !SLIM_LCD_MENUS
 
   // M92 - Steps Per mm
+  #if DISABLED(SLIM_LCD_MENUS)
   if (!printer_busy())
     SUBMENU(MSG_STEPS_PER_MM, menu_advanced_steps_per_mm);
+  #endif
 
   #if ENABLED(BACKLASH_GCODE)
     SUBMENU(MSG_BACKLASH, menu_backlash);
