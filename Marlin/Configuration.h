@@ -89,7 +89,7 @@
 #define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
-//#define SHOW_CUSTOM_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
 //#define CUSTOM_STATUS_SCREEN_IMAGE
@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // autotune values
-  #define  DEFAULT_Kp 22.66
-  #define  DEFAULT_Ki 1.73
-  #define  DEFAULT_Kd 74.26
+  #define  DEFAULT_Kp 28.05
+  #define  DEFAULT_Ki 2.61
+  #define  DEFAULT_Kd 75.27
 
 #endif // PIDTEMP
 
