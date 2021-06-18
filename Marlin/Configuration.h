@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // autotune values
-  #define  DEFAULT_Kp 28.05
-  #define  DEFAULT_Ki 2.61
-  #define  DEFAULT_Kd 75.27
+  #define DEFAULT_Kp 28.98
+  #define DEFAULT_Ki 2.46
+  #define DEFAULT_Kd 85.46
 
 #endif // PIDTEMP
 
@@ -1645,7 +1645,7 @@
  * you must uncomment the following option or it won't work.
  *
  */
-#define SDSUPPORT
+//#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
